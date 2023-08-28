@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>college admission form</title>
+        <style>
+            body{
+                font-family:arial,sans-serif;
+            }
+            form{
+                max-width:500px;
+                margin:0 auto;
+            }
+            label{
+                font-weight:bold;
+            }
+            </style>
+            </head>
+            <body>
+                <h1>college admission form</h1>
+                <form action="process_admission.php"method="post">
+                    <label for="full_name">full name:</label>
+                    <input type="text"id="full_name"name="full_name"required><br><br>
+
+                    <label for="dob">date of birth:</label>
+                    <input type="date"id="dob"name="dob"required><br><br>
+
+                    <label for="email">email:</label>
+                    <input type="email"id="email"name="email"required><br><br>
+
+                    <label for="phone">phone:</label>
+                    <input type="tel"id="phone"name="phone"required><br><br>
+
+                    <label for="address">address:</label>
+                    <textarea id="address"name="address"rows="4"required></textarea><br><br>
+
+                    <label for="program">program of intrest:</label>
+                    <select id="program"name="program"required>
+                        <option value="computer_science">computer science</option>
+                        <option value="engineering">engineering</option>
+                        <option value="business_admin">business administration</option>
+                        <!--add more options as needed-->
+                        </select><br><br>
+
+
+                        <label for="semeter">preferred semester:</label>
+                        <input type="radio"id="semester_fall"name="semester"value="fall"required>
+                        <label for="semester_fall">fall</label>
+                        <input type="radio"id="semester_spring"name="semester"value="spring"required>
+                        <label for="semester_spring">spring</label><br><br>
+
+
+                        <label for="background">educational background:</label><br>
+                        <textarea id="background" name="achievements"rows="6"></textarea><br><br>
+
+
+                        <label for="references">References(option):</label><br>
+                        <textarea id="references"name="references"rows="4"></textarea><br><br>
+
+
+                        <input type="submit"value="submit">
+                        </form>
+                        </body>
+                        </html>
